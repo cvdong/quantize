@@ -43,3 +43,16 @@ python train.py
 ```
 python export.py
 ```
+
+![](../../images/yolov5s_det_onnx.png)
+
+7. transpose
+
+v8 + transpose 更改输出维度顺序 与v5保持一致 方便通用框架trt推理
+
+```
+python v8trans.py
+```
+
+![](../../images/yolov5s_det_trans_onnx.png)
+
