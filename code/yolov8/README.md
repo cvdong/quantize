@@ -23,3 +23,21 @@ cd ultralytics
 ```
 pip install -e .
 ```
+
+4. test env
+
+```
+python test.py
+```
+
+5. train
+
+```
+python train.py
+```
+
+6. export onnx
+
+```
+python export.py
+```
