@@ -6,6 +6,8 @@ repo install
 
 ![img](../../images/banner-yolov8.png)
 
+![img](../../images/yolo_task.png)
+
 1. Clone the ultralytics repository
 
 ```
