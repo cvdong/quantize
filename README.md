@@ -5,7 +5,8 @@
 1. 量化知识
 2. ppq
 3. pytorch-quantization
-4. yolov5/v8 PTQ/QAT 量化实践
+4. [yolov8](https://github.com/cvdong/Quantization/tree/main/code/yolov8)
+5. yolov5/v8 PTQ/QAT 量化实践
 
 ![img](images/ppq.jpg)
 
