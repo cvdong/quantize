@@ -2,17 +2,12 @@
 
 模型量化 ™️
 
-1. 量化基础知识
+1. 量化知识
+2. ppq
+3. pytorch-quantization
+4. yolov5/v8 PTQ/QAT 量化实践
 
-
-
-
-
-
-
-
-
-
+![img](images/ppq.jpg)
 
 推荐开源课程🚀：
 
