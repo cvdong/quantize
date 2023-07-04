@@ -6,7 +6,7 @@
 2. ppq
 3. trt-ptq
 4. pytorch-quantization
-5. [yolov8](https://github.com/cvdong/Quantization/tree/main/code/yolov8)
+5. [yolov8](https://github.com/cvdong/YOLOv8)
 6. yolov5/v8 PTQ/QAT 量化实践
 
 ![img](images/ppq.jpg)
