@@ -1,6 +1,23 @@
-## TensorRt PTQ 量化
+## 量化
 
-1. FP32
+### tensorrt-ptq
 
-2. FP16
-3. INT8
+* fp16
+
+build:
+
+```
+trtexec --onnx=best.onnx --saveEngine=best.engine --fp16
+```
+
+test:
+
+```
+trtexec --loadEngine=best.engine 
+```
+
+这里也可以使用py/cpp脚本实现：
+
+```
+python trt-ptq-engine.py --has-half=True
+```
