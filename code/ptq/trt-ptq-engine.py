@@ -3,7 +3,7 @@
 '''
 Version: v1.0
 Author: 東
-Date: 2023.7.13
+Date: 2023.7.13 cg
 Description: onnx-->engine 通过onnx解析生成engine model
              test env: onnx 1.12.1 tensorrt 8.4.1.5 
 Copyright (c) 2023 by ${東}, All Rights Reserved. 
@@ -23,9 +23,7 @@ import pycuda.driver as cuda
 import torchvision.transforms as transforms
 from PIL import Image
 
-
-Parser = argparse.ArgumentParser()
-Parser.add_argument('--onnx_path', type=str, default='weights/yolov8s.onnx')
+Parser.add_argument('--onnx_path', type=str, default='weights/best.onnx')
 Parser.add_argument('--has_half', type=bool, default=false)
 Parser.add_argument('--has_int8', type=bool, default=false)
 Parser.add_argument('--calib_path', type=str, default='data/calib_images')
@@ -77,11 +75,18 @@ def file_size(path):
     else:
         return 0.0
 
+"""
+There are 4 types calibrator in TensorRT.
+trt.IInt8LegacyCalibrator
+trt.IInt8EntropyCalibrator
+trt.IInt8EntropyCalibrator2
+trt.IInt8MinMaxCalibrator
+"""
 
-class EntropyCalibrator(trt.IInt8MinMaxCalibrator):
+class EntropyCalibrator(trt.IInt8EntropyCalibrator2):
     
     def __init__(self, files_path=r'imgs'):
-        trt.IInt8MinMaxCalibrator.__init__(self)
+        trt.trt.IInt8EntropyCalibrator2.__init__(self)
 
         self.cache_file = 'data/cache.cache'
 
@@ -200,8 +205,8 @@ if __name__ == '__main__':
     '''
     engine生成可以直接利用shell,也可以使用Tools-->trtexec:
     
-    trtexec --onnx = ./weights/yolov5s.onnx  \
-            --saveEngine = ./weights/yolov5s_fp16.engine \
+    trtexec --onnx = ./weights/best.onnx  \
+            --saveEngine = ./weights/best.engine \
             --workspace = 4096
             --fp16
     
@@ -211,4 +216,4 @@ if __name__ == '__main__':
     # Logger-->Builder-->BuilderConfig-->NetWork-->SeralizedNetWork
     export_engine(args.onnx_path, args.calib_path, half=args.has_half, trt_int8=args.has_int8)
     
-    print("--咕噜噜----onnx 转换 engine 完成!!!----------")
+    print("--咕噜噜dong----onnx 转换 engine 完成!!!----------")
