@@ -1,7 +1,8 @@
-## PPQ 
+## PPQ
+
 一个可扩展的、高性能的、面向工业应用的神经网络量化工具! 非常优秀，易用。
 
-repo:   
+repo:
 
 [https://github.com/openppl-public/ppq](https://github.com/openppl-public/ppq)
 
@@ -20,4 +21,4 @@ python export_engine.py
 ```
 
 2. qat
-后续！
+   关注 [pytorch-quantization](https://github.com/cvdong/Quantization/tree/main/code/pytorch-quantization)!

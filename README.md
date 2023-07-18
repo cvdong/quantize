@@ -3,7 +3,7 @@
 模型量化 ™️
 
 1. 量化知识
-2. [ppq](https://github.com/cvdong/Quantization/tree/main/code/ppq)
+2. [ppq](https://github.com/cvdong/Quantization/tree/main/code/ppq-ptq)
 3. [trt-ptq](https://github.com/cvdong/Quantization/tree/main/code/trt-ptq)
 4. pytorch-quantization
 5. [yolov8](https://github.com/cvdong/YOLOv8)
