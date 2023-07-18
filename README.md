@@ -4,7 +4,7 @@
 
 1. 量化知识
 2. [ppq](https://github.com/cvdong/Quantization/tree/main/code/ppq)
-3. [trt-ptq](https://github.com/cvdong/Quantization/tree/main/code/ptq)
+3. [trt-ptq](https://github.com/cvdong/Quantization/tree/main/code/trt-ptq)
 4. pytorch-quantization
 5. [yolov8](https://github.com/cvdong/YOLOv8)
 6. yolov5/v8 PTQ/QAT 量化实践
