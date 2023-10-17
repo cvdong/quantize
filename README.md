@@ -2,12 +2,10 @@
 
 模型量化 ™️
 
-1. 量化知识
-2. [ppq](https://github.com/cvdong/Quantization/tree/main/code/ppq-ptq)
-3. [trt-ptq](https://github.com/cvdong/Quantization/tree/main/code/trt-ptq)
-4. pytorch-quantization
-5. [yolov8](https://github.com/cvdong/YOLOv8)
-6. yolov5/v8 PTQ/QAT 量化实践
+1. 量化梳理
+2. ppq 使用
+3. pytorch-quantization
+4. yolov5/v8 PTQ/QAT 量化实践
 
 ![img](images/ppq.jpg)
 
